@@ -9,7 +9,7 @@ export default function Intro() {
           rel="stylesheet"
         />
         <div className="title1">
-          <span class="one" >WELCOME</span>
+          <span  class="one" >WELCOME</span>
         </div>
       </div>
     </div>
