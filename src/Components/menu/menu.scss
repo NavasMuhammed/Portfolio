@@ -1,0 +1,54 @@
+.menu{
+    width: 300px;
+    height:100vh;
+    position:fixed;
+    // backdrop-filter: blur(1rem);
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    top: 0;
+    right: -300px;
+    z-index: 3;
+    transition:all 1s ease;
+
+
+    &.active{
+        right: 0px;
+
+    }
+    ul{
+
+        list-style: none;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        width: 85%;
+        
+        li{
+            margin-bottom: 25px;
+            a{
+                text-decoration: none;
+                font-size: inherit;
+                color: rgb(0, 0, 0);
+
+            }
+            &:hover{
+                transition:all .5s ease;
+                
+                font-weight: 900;
+                animation: glow1 1s ease-in infinite alternate;
+            }
+            @keyframes glow1 {
+                from {
+                  text-shadow: 0 0 0px #000000;
+                }
+                to {
+                  text-shadow: 0 0 5px #000000af, 0 0 5px #000000b6;
+                }
+              }
+
+        }
+    }
+}
