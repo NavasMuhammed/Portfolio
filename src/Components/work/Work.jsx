@@ -30,7 +30,29 @@ export default function Work() {
         </div>
       </div>
       <div className="right">
-      <div className="language"></div>
+      <div className="technical" >
+          <br/>
+            <div className="new">Languages Skills</div>
+            <div className="test">ENGLISH</div>
+            
+            <div className="html">
+              <div className="inner"></div>
+            </div><div className="test">MALAYALAM</div>
+            <div className="css">
+            <div className="inner"></div>
+            </div><div className="test">HINDI</div>
+            <div className="javascript">
+            <div className="inner"></div>
+            </div><div className="test">ARABIC</div>
+            <div className="python">
+            <div className="inner"></div>
+            </div><div className="test">C</div>
+            <div className="c">
+            <div className="inner"></div>
+            </div>
+          
+        </div>
+      
       </div>
     </div>
   );
