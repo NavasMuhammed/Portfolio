@@ -1,7 +1,9 @@
 import "./portfolio.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
-// import "../assets/person.png"
+import x from "./me.jpg";
+
+
 
 export default function Portfolio() {
   const textRef = useRef();
@@ -18,7 +20,7 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <div className="left">
         <div className="imagecontainer">
-          <img className="img" src="assets/me.jpg" alt="" />
+          <img className="img" src={x} alt="" />
         </div>
       </div>
       <div className="right">

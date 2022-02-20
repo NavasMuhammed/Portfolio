@@ -1,5 +1,11 @@
+@import "../../global.scss";
 .intro {
   background-color: transparent !important;
+
+  @include mobile{
+    flex-direction:column;
+    
+  }
 }
 .title {
   // color: #ffffff;
@@ -32,6 +38,10 @@
       align-items: center;
       justify-content: center;
       float: right;
+      @include mobile{
+        font-size: 80px;
+        
+      }
     }
   }
 

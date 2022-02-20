@@ -1,11 +1,23 @@
+@import "../../global.scss";
 .portfolio {
-
   display: flex;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .left {
     overflow: hidden;
     flex: 0.5;
     // background-color: transparent !important;
     position: relative;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
     .imagecontainer {
       position: relative;
@@ -19,16 +31,26 @@
       align-items: flex-end;
       justify-self: flex-end;
       float: right;
-      
-
-      .img {
+      @include mobile {
         height: 100%;
         width: 100%;
-        
+        align-items: center;
+        justify-content: center;
+        left: 0%;
+        right: 0%;
       }
+        .img {
+          height: 100%;
+          width: 100%;
+        }
+      
     }
   }
   .right {
+    @include mobile {
+      flex-direction: column;
+      text-align: centre;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,6 +59,14 @@
     flex: 0.5;
     background-color: transparent !important;
     .wraper {
+      @include mobile {
+        // flex-direction:column;
+        height: max-content;
+        text-align: center;
+        
+        padding: 10px;
+        // margin: 10px;
+      }
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -45,26 +75,44 @@
       color: white;
       h1 {
         font-size: 60px;
-        margin: 10px 0;
+        // margin: 10px 0;
+       
+
       }
       h2 {
         font-size: 35px;
         height: 110%;
+        @include mobile{
+          margin-top: 30px;
+          margin-bottom: -17px;
+          align-items: center;
+          height: 80%;
+          justify-content:center;
+        }
       }
       h3 {
         font-size: 30px;
         margin-top: -42px;
-      }
-      span {
+        span {
+          color: rgb(236, 192, 45);
+        }
+        span {
         color: rgb(236, 192, 45);
+      }@include mobile{
+        // margin-top: 00px;
+        align-items: center;
+        height: 110%;
+        justify-content:center;
       }
+      }
+      
 
       .ityped-cursor {
-        animation: blink .8s infinite;
+        animation: blink 0.8s infinite;
       }
       @keyframes blink {
         50% {
-            opacity: 1;
+          opacity: 1;
         }
         100% {
           opacity: 0;

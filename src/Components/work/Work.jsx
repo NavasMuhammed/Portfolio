@@ -46,11 +46,12 @@ export default function Work() {
             </div><div className="test">ARABIC</div>
             <div className="python">
             <div className="inner"></div>
-            </div><div className="test">C</div>
-            <div className="c">
+            </div>
+            {/* <div className="test">C</div> */}
+            {/* <div className="c">
             <div className="inner"></div>
             </div>
-          
+           */}
         </div>
       
       </div>

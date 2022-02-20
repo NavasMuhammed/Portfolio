@@ -1,3 +1,78 @@
-.testimonials{
-    background-color: rgb(109, 144, 219);
+.testimonials {
+  background-color: rgb(109, 144, 219);
+  .education {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    // background-color: rgb(204, 64, 64);
+    display: flex;
+    .school {
+      flex: 1;
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      
+      justify-content: center;
+      padding: 20px;
+      
+      .progress {
+        //   flex: .5;
+        width: 180px;
+        height: 180px;
+        background-color: #fff;
+        position: relative;
+        // top: 50px;
+        border-radius: 50%;
+        stroke: rgb(207, 47, 47);
+        stroke-width: 50px;
+        stroke-dasharray: 200;
+        
+        padding: 27px;
+        box-shadow: 6px 6px 10px -1px rgba(126, 125, 125, 0.849),
+          -6px -6px 10px -1px rgb(196, 191, 191);
+        animation: round 2s linear infinite;
+
+        @keyframes round{
+            from{
+                stroke: 0px;
+            }
+
+        }
+      }
+      .progressin {
+        width: 180px;
+        height: 180px;
+        background-color: rgb(0, 0, 0);
+        position: relative;
+
+        border-radius: 50%;
+        box-shadow: inset 4px 4px 6px -1px rgb(163, 162, 162),
+          inset -6px -6px 10px -1px rgb(163, 156, 156),
+          0.5px 0.5px 0px rgb(82, 77, 77);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .persentage {
+          height: 100px;
+          width: 100px;
+          color: rgb(230, 215, 215);
+          text-align: center;
+          font-size: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+        }
+      }
+      
+    }
+    .highschool {
+      flex: 1;
+      background-color: blanchedalmond;
+    }
+    .collage {
+      flex: 1;
+      background-color: aqua;
+    }
+  }
 }
