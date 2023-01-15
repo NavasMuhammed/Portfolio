@@ -31,7 +31,10 @@
     text-transform: uppercase;
     animation: glow 5s linear forwards;
     text-align: center;
-
+    @include mobile{
+      
+      
+    }
     .one {
       user-select: none;
       display: flex;

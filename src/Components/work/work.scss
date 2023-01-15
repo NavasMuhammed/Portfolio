@@ -1,476 +1,214 @@
 @import "../../global.scss";
-.work{
-    
-    background-color: rgb(0, 0, 0);
-    display:flex;
-    .left{
-        display: flex;
-        background-color:rgb(0, 0, 0);
-        align-items: center;
-        justify-content: center;
-        flex: 1;
-        .new{
-            width: 100%;
-            height: 100px;
-        }
-        .technical{
-            
-            font-size: 35px;
-            font-weight: 900;
-            text-align:center;
-            color:#fcfcfc;
-            overflow:hidden;
-            background-color:rgba(15, 15, 15, 0.671);
-            width:600px;
-            height: 600px;
-            box-shadow: 0 0 80px rgba(255, 255, 255, 0.151);
-            position:relative;
-            
-            
-            
-        }
-        span{
-            color: rgb(253, 253, 253);
-            background-color: rgb(224, 214, 214);
-        }
-        .test{
-       
-            top: 22px;
-            left: 27px;
-            padding: 0;
-            color:white;
-            position: relative;
-            overflow: hidden;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            // left: 20px;
-            background-color:rgba(0, 0, 0, 0);
-            width: 80px;
-            height: 30px;
-            
-        }
-        .html{
-            position: relative;
-            // border-radius: 50%;
-            
-            left: 110px;
-            color:white;
-            height: 17px;
-            width: 400px;
-            background-color:white;
-            display:flex;
-            align-items:center;
-            justify-content:start;
-            flex-direction:row-reverse ;
-            .inner{
-                background-color:rgb(236, 192, 45);
-                height: 100%;
-                width: 1%;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                // left: -200px;
-                float: right;
-                animation:fill 5s normal forwards;
-                
+.work {
+    background-color: transparent !important;
+  @include mobile {
+    flex-direction: column;
+  }
 
-
-            }
-            @keyframes fill {
-                from { 
-                    width: 0%;
-                }
-                to{
-                    width: 85%;
-                }
-                
-            }
-        }
-        .css{
-            position: relative;
-            // border-radius: 50%;
-        
-            left: 110px;
-            color:white;
-            height: 17px;
-            width: 400px;
-            background-color:white;
-            display:flex;
-            // align-items:center;
-            justify-content:start;
-            flex-direction: column;
-            .inner{
-                background-color:rgb(236, 192, 45);
-                height: 100%;
-                width: 1%;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                display: flex;
-                
-                float: right;
-                animation:fill1 5s normal forwards;
-                @keyframes fill1 {
-                    from { 
-                        width: 0%;
-                    }
-                    to{
-                        width: 75%;
-                    }
-                    
-                }
-
-
-            }
-
-        }
-        .javascript{
-            position: relative;
-            // border-radius: 50%;
-            
-            left: 110px;
-            color:white;
-            height: 17px;
-            width: 400px;
-            background-color:white;
-            display:flex;
-            // align-items:center;
-            justify-content:start;
-            flex-direction: column;
-            .inner{
-                background-color:rgb(236, 192, 45);
-                height: 100%;
-                width: 1%;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                // left: -200px;
-                float: right;
-                animation:fill2 5s normal forwards;
-                @keyframes fill2 {
-                    from { 
-                        width: 0%;
-                    }
-                    to{
-                        width: 15%;
-                    }
-                    
-                }
-
-
-            }
-        }
-        .python{
-            position: relative;
-            // border-radius: 50%;
-          
-            left: 110px;
-            color:white;
-            height: 17px;
-            width: 400px;
-            background-color:white;
-            display:flex;
-            // align-items:center;
-            justify-content:start;
-            flex-direction: column;
-            .inner{
-                background-color:rgb(236, 192, 45);
-                height: 100%;
-                width: 1%;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                // left: -200px;
-                float: right;
-                animation:fill3 5s normal forwards;
-                @keyframes fill3 {
-                    from { 
-                        width: 0%;
-                    }
-                    to{
-                        width: 5%;
-                    }
-                    
-                }
-
-
-            }
-        }
-        .c{
-            position: relative;
-            // border-radius: 50%;
-         
-            left: 110px;
-            color:white;
-            height: 17px;
-            width: 400px;
-            background-color:white;
-            display:flex;
-            // align-items:center;
-            justify-content:start;
-            flex-direction: column;
-            .inner{
-                background-color:rgb(236, 192, 45);
-                height: 100%;
-                width: 1%;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                // left: -200px;
-                float: right;
-                animation:fill4 5s normal forwards;
-                @keyframes fill4 {
-                    from { 
-                        width: 0%;
-                    }
-                    to{
-                        width: 35%;
-                    }
-                    
-                }
-
-
-            }
-        }
-
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  .left {
+    @include mobile {
+      margin-top: 20px;
+      align-items: center;
+      height: 40%;
+      width: 40%;
+      justify-content: center;
     }
-    .right{
-        display: flex;
-        background-color:rgb(0, 0, 0);
-        align-items: center;
-        justify-content: center;
-        flex: 1;
-        .new{
-            width: 100%;
-            height: 100px;
-        }
-        .technical{
-            
-            font-size: 35px;
-            font-weight: 900;
-            text-align:center;
-            color:#fcfcfc;
-            overflow:hidden;
-            background-color:rgba(15, 15, 15, 0.671);
-            width:600px;
-            height: 600px;
-            box-shadow: 0 0 80px rgba(255, 255, 255, 0.151);
-            position:relative;
-            
-            
-            
-        }
-        span{
-            color: rgb(253, 253, 253);
-            background-color: rgb(224, 214, 214);
-        }
-        .test{
-       
-            top: 22px;
-            left: 27px;
-            padding: 0;
-            color:white;
-            position: relative;
-            overflow: hidden;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            // left: 20px;
-            background-color:rgba(0, 0, 0, 0);
-            width: 80px;
-            height: 30px;
-            
-        }
-        .html{
-            position: relative;
-            // border-radius: 50%;
-            
-            left: 110px;
-            color:white;
-            height: 17px;
-            width: 400px;
-            background-color:white;
-            display:flex;
-            align-items:center;
-            justify-content:start;
-            flex-direction:row-reverse ;
-            .inner{
-                background-color:rgb(236, 192, 45);
-                height: 100%;
-                width: 1%;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                // left: -200px;
-                float: right;
-                animation:fill 5s normal forwards;
-                
-
-
-            }
-            @keyframes fill {
-                from { 
-                    width: 0%;
-                }
-                to{
-                    width: 85%;
-                }
-                
-            }
-        }
-        .css{
-            position: relative;
-            // border-radius: 50%;
-        
-            left: 110px;
-            color:white;
-            height: 17px;
-            width: 400px;
-            background-color:white;
-            display:flex;
-            // align-items:center;
-            justify-content:start;
-            flex-direction: column;
-            .inner{
-                background-color:rgb(236, 192, 45);
-                height: 100%;
-                width: 1%;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                display: flex;
-                
-                float: right;
-                animation:fill1 5s normal forwards;
-                @keyframes fill1 {
-                    from { 
-                        width: 0%;
-                    }
-                    to{
-                        width: 75%;
-                    }
-                    
-                }
-
-
-            }
-
-        }
-        .javascript{
-            position: relative;
-            // border-radius: 50%;
-            
-            left: 110px;
-            color:white;
-            height: 17px;
-            width: 400px;
-            background-color:white;
-            display:flex;
-            // align-items:center;
-            justify-content:start;
-            flex-direction: column;
-            .inner{
-                background-color:rgb(236, 192, 45);
-                height: 100%;
-                width: 1%;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                // left: -200px;
-                float: right;
-                animation:fill2 5s normal forwards;
-                @keyframes fill2 {
-                    from { 
-                        width: 0%;
-                    }
-                    to{
-                        width: 35%;
-                    }
-                    
-                }
-
-
-            }
-        }
-        .python{
-            position: relative;
-            // border-radius: 50%;
-          
-            left: 110px;
-            color:white;
-            height: 17px;
-            width: 400px;
-            background-color:white;
-            display:flex;
-            // align-items:center;
-            justify-content:start;
-            flex-direction: column;
-            .inner{
-                background-color:rgb(236, 192, 45);
-                height: 100%;
-                width: 1%;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                // left: -200px;
-                float: right;
-                animation:fill3 5s normal forwards;
-                @keyframes fill3 {
-                    from { 
-                        width: 0%;
-                    }
-                    to{
-                        width: 55%;
-                    }
-                    
-                }
-
-
-            }
-        }
-        .c{
-            position: relative;
-            // border-radius: 50%;
-         
-            left: 110px;
-            color:white;
-            height: 17px;
-            width: 400px;
-            background-color:white;
-            display:flex;
-            // align-items:center;
-            justify-content:start;
-            flex-direction: column;
-            .inner{
-                background-color:rgb(236, 192, 45);
-                height: 100%;
-                width: 1%;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                // left: -200px;
-                float: right;
-                animation:fill4 5s normal forwards;
-                @keyframes fill4 {
-                    from { 
-                        width: 0%;
-                    }
-                    to{
-                        width: 65%;
-                    }
-                    
-                }
-
-
-            }
-        }
-
+    display: flex;
+    // background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    .new {
+      width: 100%;
+      height: 50px;
     }
-    
+    .technical {
+      
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-left: 1px solid rgba(255,255,255,0.5);
+        backdrop-filter: blur(3.5px);
+        border-radius: 82px;
+      
+      font-size: 35px;
+      font-weight: 900;
+      text-align: center;
+      color: #fcfcfc;
+      overflow: hidden;
+      background-color: rgba(15, 15, 15, 0.671);
+      width: 600px;
+      height: 600px;
+      left: -800px;
+      box-shadow: 0 0 80px rgba(255, 255, 255, 0.151);
+      position: relative;
+      animation: hope1 .5s normal forwards;
+        @keyframes hope1 {
+            from {
+                left: 0px;
+              }
+              to{
+                  left:-600px;
+              }
+            
+        }
+      
+      @include mobile {
+        justify-content: center;
+        height: 95%;
+        
+      }
+      &.active {
+          
+        animation: hope .5s normal forwards;
+        @keyframes hope {
+            from {
+                left: -600px;
+              }
+              to{
+                  left:0px;
+              }
+            
+        }
+        
+      }
+    }
+    span {
+      color: rgb(253, 253, 253);
+      background-color: rgb(224, 214, 214);
+      
+    }
+    .test {
+      top: 22px;
+      left: 27px;
+      padding: 0;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      // left: 20px;
+      background-color: rgba(0, 0, 0, 0);
+      width: 80px;
+      height: 30px;
+      
+    }
+    .progressbar {
+      position: relative;
 
+      border-radius: 15px;
+      left: 110px;
+      color: white;
+      height: 17px;
+      width: 400px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      flex-direction: row-reverse;
+      .inner {
+        border-radius: 15px;
+        background-color: rgb(236, 192, 45);
+        height: 100%;
+        width: 1%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        float: right;
+      }
+      @include mobile {
+        width: 200px;
+      }
+
+      .html {
+        &.active {
+          animation: fill 5s normal forwards;
+          @keyframes fill {
+            from {
+              width: 0%;
+            }
+            to {
+              width: 65%;
+            }
+          }
+        }
+      }
+      .css {
+        &.active {
+          animation: fill1 5s normal forwards;
+          @keyframes fill1 {
+            from {
+              width: 0%;
+            }
+            to {
+              width: 55%;
+            }
+          }
+        }
+      }
+      .python {
+        &.active {
+          animation: fill2 5s normal forwards;
+          @keyframes fill2 {
+            from {
+              width: 0%;
+            }
+            to {
+              width: 25%;
+            }
+          }
+        }
+      }
+      .javascript {
+        &.active {
+          animation: fill3 5s normal forwards;
+          @keyframes fill3 {
+            from {
+              width: 0%;
+            }
+            to {
+              width: 35%;
+            }
+          }
+        }
+      }
+      .c {
+        &.active {
+          animation: fill4 5s normal forwards;
+          @keyframes fill4 {
+            from {
+              width: 0%;
+            }
+            to {
+              width: 35%;
+            }
+          }
+        }
+      }
+      .react {
+        &.active {
+          animation: fill5 5s normal forwards;
+          @keyframes fill5 {
+            from {
+              width: 0%;
+            }
+            to {
+              width:45%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+    // background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
 }
