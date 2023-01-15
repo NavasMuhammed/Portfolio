@@ -1,3 +1,56 @@
+@import "../../global.scss";
 .contact{
-    background-color: rgb(185, 60, 60);
+    // background-color: rgb(185, 60, 60);
+    .container1 {
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content:space-around;
+        
+        .test{
+            @include mobile {
+                transform: scale(0.7);
+                font-size: 25px;
+              }
+            display: flex;
+            height: 100px;
+            width: 400px;
+            // background-color: rgb(209, 71, 71);
+            justify-content:center;
+            align-items:center;
+            flex-wrap: wrap;
+            border-radius: 20px;
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            border : 5px solid rgba(255,255,255,0.5);
+            backdrop-filter: blur(2.5px);
+            text-decoration: none;
+
+            cursor: pointer;
+            a{
+                height: 40px;
+                width: 80%;
+                text-decoration: none;
+                align-items: center;
+                color:white;
+                opacity: 0.5;
+                @include mobile {
+                    width: 250px;
+                   
+                    
+                  }
+                
+            }
+            a:hover{
+               opacity: 1;
+            }
+            
+            
+        }
+        
+    }
 }
+
