@@ -1,6 +1,6 @@
 import "./work.scss";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useRef, useState } from "react";
+import { useEffect} from "react";
 
 export default function Work() {
   const { ref, inView } = useInView({
