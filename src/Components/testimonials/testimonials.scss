@@ -1,20 +1,25 @@
 @import "../../global.scss";
+
 .testimonials {
   // background-color: rgb(109, 144, 219);
   color: white;
+
   .education {
     overflow: hidden;
     height: 300px;
     width: 300px;
     // background-color: rgb(204, 64, 64);
     display: flex;
+
     @include mobile {
       flex-direction: column;
     }
+
     .school {
       flex: 1;
       // background-color: rgb(117, 110, 110);
       display: flex;
+
       @include mobile {
         width: 100%;
         height: 100%;
@@ -23,129 +28,43 @@
 
       justify-content: center;
       padding: 40px;
+
       .schoolcontainer {
         height: 100%;
         width: 350px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
+
         @include mobile {
           flex-direction: row;
         }
+
         img {
           width: 100%;
           height: 100%;
           border-radius: 10px;
-          @include mobile {
-            display: none;
-          }
-        }
-        .title {
-          height: 110px;
-          font-size: 50px;
-          font-weight: 900;
-          position: relative;
-          @include mobile {
-            width: 200px;
-            font-size: 30px;
-            top: 10px;
-          }
-          // margin-left: 90px;
-        }
-        .content {
-          position: relative;
-          top: 20px;
-          font-size: 20px;
-          font-weight: bold;
-        }
-      }
-    }
-    .highschool {
-      @include mobile {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-      }
-      flex: 1;
-      padding: 40px;
-      // background-color: blanchedalmond;
-      .schoolcontainer {
-        @include mobile {
-          flex-direction: row;
-        }
-        height: 100%;
-        width: 350px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        img {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
+
           @include mobile {
             display: none;
           }
         }
 
         .title {
-          // margin-left: 30px;
-          width: 410px;
-          height: 140px;
-          font-size: 50px;
-          font-weight: 900;
-          position: relative;
-          @include mobile {
-            width: 200px;
-            font-size: 30px;
-            top: 10px;
-          }
-        }
-        .content {
-          position: relative;
-          top: 20px;
-          font-size: 20px;
-          font-weight: bold;
-        }
-      }
-    }
-    .collage {
-      @include mobile {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-      }
-      flex: 1;
-      padding: 40px;
-      // background-color: aqua;
-      .schoolcontainer {
-        @include mobile {
-          flex-direction: row;
-        }
-        height: 100%;
-        width: 350px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        img {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
-          @include mobile {
-            display: none;
-          }
-        }
-        .title {
-          // margin-left: 90px;
           height: 110px;
           font-size: 50px;
           font-weight: 900;
           position: relative;
+
           @include mobile {
             width: 200px;
             font-size: 30px;
             top: 10px;
           }
+
+          // margin-left: 90px;
         }
+
         .content {
           position: relative;
           top: 20px;
@@ -154,5 +73,6 @@
         }
       }
     }
+
   }
 }
